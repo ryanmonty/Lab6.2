@@ -12,20 +12,19 @@
 	<h1>How Are We Doing?</h1>
 		
 	<div>
-            <form action="/review" method="get">
+            <form action="/review" method="GET">
               Name: 
-              <input type="text" name="name" placeholder="Your name..">
+              <input type="text" name="name" required="required" placeholder="Your name..">
               <br>
               <br>
-          	  
               Comments:
               <br>
-              <textarea name="comments" placeholder="Why do you like us so much?"></textarea>
+              <textarea name="comments" required="required" minlength="5" placeholder="Why do you like us so much?"></textarea>
               <br>
               <br>
               Rating:
           	  <div>
-    <input type="radio" name="rate" value="5" />
+    <input type="radio" name="rate" value="5"  required="required" />
     <label for="star5" title="text">5 STAR</label>
     <input type="radio" name="rate" value="4" />
     <label for="star4" title="text">4 STAR</label>

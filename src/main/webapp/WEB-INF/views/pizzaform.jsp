@@ -9,7 +9,7 @@
 <title>Build Your Own Pizza</title>
 </head>
 <body>
-	<form action="/custompizza" method="get">
+	<form action="/custompizza" method="GET">
 		Size:
 		<select name="size">
 			<option value="NONE" label="Select" />
@@ -18,7 +18,7 @@
 			<option value="large" label="Large" />
 		</select>
 		<br>
-		How many toppings? <input name="toppings" type="number"/>
+		How many toppings? <input min="0" max="10" name="toppings" type="number"/>
 		<br> 
 		<input name= "gf" type=checkbox value="true"/>Gluten-Free Crust? ($2.00 extra)
 		<br>
